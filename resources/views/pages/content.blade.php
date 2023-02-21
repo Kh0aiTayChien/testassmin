@@ -1,6 +1,5 @@
 @extends('layouts.master')
 @section('content')
-
     @include('pages/banner')
     <div class="content">
         <div class="side-content ">
@@ -16,11 +15,9 @@
             </div>
         </div>
         <div class="main-content ms-4">
-            <h3> TIN TỨC </h3>
-           @livewire('list-index')
+            <h3> Bài viết </h3>
+            <h4 align="center" class="mb-4"> {{ $article->title }}</h4>
+            {!! $article->content !!}
         </div>
     </div>
-    <script>
-
-    </script>
 @endsection

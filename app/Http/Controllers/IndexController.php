@@ -11,4 +11,10 @@ class IndexController extends Controller
     {
         return view('pages/index');
     }
+
+    public function show($slug)
+    {
+        $article = Article::where('slug',$slug)->firstOrFail();
+        return view('pages/content', ['article' => $article]);
+    }
 }

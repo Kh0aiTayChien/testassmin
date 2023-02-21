@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 //    return view('index');
 //})->where('uri', '(.*)');
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
+Route::get('/{slug}', [App\Http\Controllers\IndexController::class,'show'])->name('article.show');
