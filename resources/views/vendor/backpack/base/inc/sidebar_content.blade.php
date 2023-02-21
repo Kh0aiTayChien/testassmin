@@ -18,9 +18,10 @@
                                 <i class="nav-icon las la-folder"></i>Chủ đề </a></li>
         </ul>
 </li>
+{{--<li class='nav-item'><a class='nav-link' href='{{ backpack_url('gallery') }}'>--}}
+{{--                <i class="nav-icon las la-photo-video"></i>Thư viện ảnh </a></li>--}}
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('banner') }}'><i class='nav-icon las la-photo-video'></i> Banners</a></li>
 
-<li class='nav-item'><a class='nav-link' href='{{ backpack_url('gallery') }}'>
-                <i class="nav-icon las la-photo-video"></i>Thư viện ảnh </a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('slideshow') }}'>
                 <i class="nav-icon las la-images"></i>Slideshows</a></li>
 <li class="nav-item nav-dropdown">

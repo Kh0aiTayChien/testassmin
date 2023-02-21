@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
 
-    @include('pages/banner')
+    @include('pages/banner',compact('banner'))
     <div class="content">
         <div class="side-content ">
             <div class="box-side-content">

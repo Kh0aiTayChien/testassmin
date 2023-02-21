@@ -16,6 +16,13 @@ return [
         'permission' => \App\Models\Permission::class,
         'role'       => \App\Models\Role::class,
     ],
+    'banner' =>
+        [
+            'model' => App\Models\Banner::class,
+            'allow_add' => false,
+            'allow_delete' => false,
+            ],
+
 
     /*
     |--------------------------------------------------------------------------
