@@ -3,7 +3,7 @@
 
     @include('pages/banner',compact('banner'))
     <div class="content">
-        <div class="side-content ">
+        <div class="side-content d-none d-md-block">
             <div class="box-side-content">
                 <div class="p-4">
                     <h4 class="font-size-medium"> DANH MỤC NỘI DUNG</h4>
@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="main-content ms-4">
-            <h3> TIN TỨC </h3>
+            <h3 class="d-none d-md-block"> TIN TỨC </h3>
            @livewire('list-index')
         </div>
     </div>

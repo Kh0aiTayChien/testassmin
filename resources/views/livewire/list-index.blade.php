@@ -1,6 +1,6 @@
 <div class="row mt-4">
     @foreach($news as $new)
-        <div class="col-6">
+        <div class="col-md-12 col-lg-6">
             <div class="card border-0" style="width: 100%;">
                 <div class="container">
                     <a href="{{ route('article.show', $new->slug) }}">

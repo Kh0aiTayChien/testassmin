@@ -46,8 +46,14 @@
     color: #0EA5E9;
 }
 .content{
-    margin: 10rem 10rem 10rem 10rem ;
+    margin: 10rem;
     display: flex;
+}
+/*với màn hình <768 thì margin = 0 */
+@media screen and (max-width: 768px) {
+    .content {
+        margin: 0;
+    }
 }
 .side-content{
     flex-basis: 23%;
@@ -61,6 +67,3 @@
 .main-content{
     flex-basis: 76%;
 }
-
-
-

@@ -2,7 +2,7 @@
 @section('content')
     @include('pages/banner',compact('banner'))
     <div class="content">
-        <div class="side-content ">
+        <div class="side-content d-none d-md-block"">
             <div class="box-side-content">
                 <div class="p-4">
                     <h4 class="font-size-medium"> DANH MỤC NỘI DUNG</h4>
