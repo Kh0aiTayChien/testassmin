@@ -28,7 +28,7 @@ class BannerCrudController extends CrudController
     {
         CRUD::setModel(\App\Models\Banner::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/banner');
-        CRUD::setEntityNameStrings('banner', 'banners');
+        CRUD::setEntityNameStrings('banner', 'banner');
         $this->crud->denyAccess(['create', 'delete']);
         $this->crud->allowAccess('update');
     }
@@ -76,6 +76,6 @@ class BannerCrudController extends CrudController
         CRUD::setValidation(BannerRequest::class);
 
 
-        CRUD::field('image')->type('image')->crop(true);
+        CRUD::field('image')->type('image')->label('Lưu ý: tỉ lệ dài/rộng = 1/6, file tối đa 2mb')->crop(true)->aspect_ratio(6);;
     }
 }

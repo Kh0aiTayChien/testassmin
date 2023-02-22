@@ -14,7 +14,7 @@
             <div>
             </div>
         </div>
-        <div class="main-content ms-4">
+        <div class="main-content ms-4 mt-4">
             <h3> Bài viết </h3>
             <h4 align="center" class="mb-4"> {{ $article->title }}</h4>
             {!! $article->content !!}
